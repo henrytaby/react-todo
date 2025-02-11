@@ -47,9 +47,12 @@ function TodoProvider({children}) {
     
       const addTodo = (text) => {
         const newTodos = [...todos];
-        const newId = newTodos[newTodos.length-1].id + 1;
+        let newId = 1;
+        if(newTodos.length>0){
+          newId = newTodos[newTodos.length-1].id + 1;
+        }       
         newTodos.push({
-          newId,
+          id:newId,
           text,
           completed:false,
         })
