@@ -51,7 +51,7 @@ tuusuario:/react-todo/$ npm install
 
 Ejecutar el siguiente comando
 ```ssh
-tuusuario:/react-todo/$ npm run dev
+tuusuario:/react-todo/$ npm start dev
 ```
 
 
