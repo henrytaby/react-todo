@@ -39,11 +39,12 @@ function AppUI() {
 
           {searchedTodos.map(todo => (
             <TodoItem
-              key={todo.text}
-              text={todo.text}
+              key={todo.id}
+              text={todo.title}
+              date={todo.created_at}
               completed={todo.completed}
-              onComplete={() => completeTodo(todo.text)}
-              onDelete={() => deleteTodo(todo.text)}
+              onComplete={() => completeTodo(todo.id)}
+              onDelete={() => deleteTodo(todo.id)}
             />
           ))}
         </TodoList>

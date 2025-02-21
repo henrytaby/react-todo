@@ -17,4 +17,9 @@
 }
 .TodoItem-p--complete {
   text-decoration: line-through;
+  color: dimgray;
+}
+.task-date{
+  color: darkgray;
+  font-size: 11px;
 }
